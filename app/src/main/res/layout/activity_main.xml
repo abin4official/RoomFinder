@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="roomfinder.ey.com.roomfinder.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_outer_one"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/img_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_bck"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ey_logo"/>
+
+        <ImageView
+            android:id="@+id/img_whitesep"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/img_bck"
+            android:background="#FFF"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERS"
+            android:layout_toRightOf="@id/img_whitesep"
+            android:textColor="#FFF"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="50dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTERPRISE RESERVATION SYSTEM"
+            android:textColor="#FFF"
+            android:layout_below="@id/img_bck"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_outer_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_outer_one">
+
+        <TextView
+            android:id="@+id/txtvw_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:layout_centerHorizontal="true"
+            android:textSize="50dp"
+            android:textStyle="normal"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/imgvw_location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/location"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtvw_hello"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtvw_chooselocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your location"
+            android:layout_below="@id/imgvw_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_spinner_location"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/dropdwon_bg"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/txtvw_chooselocation">
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/downarrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_spinner_building"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/dropdwon_bg"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/rl_spinner_location">
+
+            <Spinner
+                android:id="@+id/spinner_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/downarrow" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
