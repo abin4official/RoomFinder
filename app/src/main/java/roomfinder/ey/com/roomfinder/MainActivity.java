@@ -14,8 +14,6 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /* test */
-
         spinner_location = (Spinner) findViewById(R.id.spinner_location);
         spinner_building = (Spinner) findViewById(R.id.spinner_building);
         String[] locations = {"Select Location","Thiruvananthapuram","Kochi"};
