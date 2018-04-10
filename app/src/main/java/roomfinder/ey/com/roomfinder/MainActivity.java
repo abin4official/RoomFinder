@@ -14,6 +14,8 @@ public class MainActivity extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* test */
+
         spinner_location = (Spinner) findViewById(R.id.spinner_location);
         spinner_building = (Spinner) findViewById(R.id.spinner_building);
         String[] locations = {"Select Location","Thiruvananthapuram","Kochi"};
@@ -46,7 +48,6 @@ public class MainActivity extends Activity  {
     }
 
     private void setBuildingSpinner() {
-        spinner_building = (Spinner) findViewById(R.id.spinner_building);
         String[] buildings = {"Select Building","Kinfra","Thejaswini","Gayatri"};
         ArrayAdapter<CharSequence> langAdapter = new ArrayAdapter<CharSequence>(MainActivity.this, R.layout.spinner_text, buildings );
         langAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);

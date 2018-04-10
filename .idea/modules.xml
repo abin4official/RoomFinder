@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RoomFinder.iml" filepath="$PROJECT_DIR$/RoomFinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RoomFinder.iml" filepath="$PROJECT_DIR$/.idea/RoomFinder.iml" />
+      <module fileurl="file://C:\SOURCECODE\NewF\RoomFinder\RoomFinder.iml" filepath="C:\SOURCECODE\NewF\RoomFinder\RoomFinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\SOURCECODE\NewF\RoomFinder\app\app.iml" filepath="C:\SOURCECODE\NewF\RoomFinder\app\app.iml" />
     </modules>
   </component>
 </project>
